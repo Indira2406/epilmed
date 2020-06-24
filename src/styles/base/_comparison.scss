@@ -1,0 +1,73 @@
+.comparison { 
+    width: 420px;
+    height: 312px;
+    // max-width: 600px;
+    // max-height: 600px;
+    overflow: hidden; }
+  .comparison figure { 
+    background-image: url(../../img/gallery/bef.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    font-size: 0;
+    width: 100%; 
+    height: 100%;
+    margin: 0; 
+  }
+  .comparison figure > img { 
+    position: relative;
+    width: 100%;
+  }
+  .comparison figure div { 
+    background-image: url(../../img/gallery/after1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 50%; 
+    box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
+    overflow: hidden;
+    bottom: 0;
+    height: 100%;
+  }
+  
+  input[type=range]{
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    position: relative;
+    top: -11rem;
+    left: -6%;
+    background-color: rgba(255,255,255,0);
+    width: 102%; 
+  }
+  input[type=range]:focus { 
+    outline: none; 
+  }
+  input[type=range]:active { 
+    outline: none;  
+  }
+  
+  input[type=range]::-moz-range-track { 
+    -moz-appearance:none;
+      height:15px;
+      width: 98%;
+      background-color: rgba(255,255,255,0.1); 
+      position: relative;
+      outline: none;    
+   }
+  input[type=range]:active { 
+    border: none; 
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance:none;
+      width: 57px;
+        height: 55px; 
+      background-image: url(../../img/gallery/arrows.svg);
+     }
+  input[type=range]::-moz-range-thumb {
+    -moz-appearance: none;
+    width: 57px;
+    height: 55px;
+       }   
+
+  
