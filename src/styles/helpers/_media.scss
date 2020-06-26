@@ -161,7 +161,7 @@ body {
             }
             &_form {
                 width: 67%;
-                height: 95%;
+                height: 80%;
             }
         }
         &-equip{
@@ -2045,7 +2045,7 @@ body {
     }
     @media (max-width: 1600px) {
         &__counter {
-            top: 19.5%;
+            top: 9.5%;
             right: 12%;
         }
     }
@@ -3685,7 +3685,7 @@ body {
 }
 .modal {
     @media(max-width: 1600px) {
-        padding: 60px;
+        padding: 40px;
     }
     @media(max-width: 1280px) {
        h2 {
