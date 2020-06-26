@@ -66,6 +66,7 @@ body {
             width: 92%;
             left: 50%;
             transform: translateX(-50%);
+            height: 100%;
         }
         &_equip {
             width: 816px;
@@ -516,14 +517,86 @@ body {
         background-color: #fff;
         margin: 24px 19px 6px 0;
         border: 2px solid transparent;
-        transition: 3s;
-        &:hover {
-            border: 2px solid #D77C69;
+        display: inline-block;}
+
+        img {
+            transition: all 0.3s ease;
+        }
+        &__item:hover {
+            border-color: $main-color;
+            img {
+                opacity: 0;
+            }
             p {
                 color: $main-color;
             }
         }
-    }
+        .item_neck:hover {
+            background-image: url(../img/calc/neckred.svg);
+            background-repeat: no-repeat;
+            background-position-x: center;
+        }
+        .item_arm:hover {
+            background-image: url(../img/calc/armred.svg);
+            background-repeat: no-repeat;
+            background-position-x: center;
+        }
+        .item_shin:hover {
+            background-image: url(../img/calc/shinred.svg);
+            background-repeat: no-repeat;
+            background-position-x: center;
+        }
+        .item_leg:hover {
+            background-image: url(../img/calc/fullred.svg);
+            background-repeat: no-repeat;
+            background-position-x: center;
+        }
+        .item_shoulders:hover {
+            background-image: url(../img/calc/shoulderred.svg);
+            background-repeat: no-repeat;
+            background-position-x: center;
+        }
+        .item_bikini:hover {
+            background-image: url(../img/calc/bikinired.svg);
+            background-repeat: no-repeat;
+            background-position-x: center;
+        }
+        .item_armpits:hover {
+            background-image: url(../img/calc/armp.svg);
+            background-repeat: no-repeat;
+            background-position-x: center;
+        }
+        .item_forearm:hover {
+            background-image: url(../img/calc/armpitred.svg);
+            background-repeat: no-repeat;
+            background-position-x: center;
+        }
+        .item_buttocks:hover {
+            background-image: url(../img/calc/butsred.svg);
+            background-repeat: no-repeat;
+            background-position-x: center;
+        }
+        .item_tum:hover {
+            background-image: url(../img/calc/tumred.svg);
+            background-repeat: no-repeat;
+            background-position-x: center;
+        }
+        .item_hips:hover {
+            background-image: url(../img/calc/hipred.png);
+            background-repeat: no-repeat;
+            background-position-x: center;
+        }
+        .item_hips:hover {
+            background-image: url(../img/calc/hipred.png);
+            background-repeat: no-repeat;
+            background-position-x: center;
+        }
+        .item_face:hover {
+            background-image: url(../img/calc/redface.svg);
+            background-repeat: no-repeat;
+            background-position-x: center;
+        }
+    
     &__img {
         position: relative;
         height: 80px;
@@ -558,6 +631,9 @@ body {
         line-height: 150%;
         margin-top: 37px;
         max-width: 50%;
+        &_2 {
+            display: none;
+        }
         a:nth-child(2){
             text-decoration: underline;
         }
@@ -568,9 +644,116 @@ body {
     }
     &__check {
         width: 435px;
-        height: 553px;
+        height: 100%;
         background-color: #fff;
         margin-top: 171px;
+        padding: 54px 50px 58px 50px;
+        box-sizing: border-box;
+        font-family: 'Proxima Nova Light';
+        font-size: 15px;
+        line-height: 150%;
+        &__3 {
+            display: block;
+        }
+        &-2 {
+            display: none;
+        }
+        &-1 {
+            display: none;
+            margin-top: 206px;
+        }
+        &-0 {
+            display: none;
+            margin-top: 206px;
+        }
+         
+    }
+    &__attention {
+        width: 52px;
+        height: 52px;
+        margin-top: 51px;
+        margin-left: 127px;
+    }
+    &__content {
+        height: 233px;
+        &_mini {
+            height: 140px;
+        }
+    }
+    &__yourchoice {
+        color: rgba(59, 62, 71, 0.5);
+        margin-bottom: 25px;
+    
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__descr {
+        color: $title-color;
+    }
+    &__sale {
+        text-align: right;
+        text-decoration: line-through;
+        color: rgba(59, 62, 71, 0.4)
+    }
+    &__price {
+        text-align: right;
+        font-family: 'Proxima Nova Semibold';
+    }
+    &__undiscounted {
+        text-align: center;
+        color: $title-color;
+        &-2 {
+            margin-top: 15px;
+        }
+    }
+    &__full {
+        display: flex;
+        justify-content: center;
+        font-family: 'Proxima Nova Semibold';
+        width: 80%;
+        
+
+    }
+    &__discount {
+        color: #FFFFFF;
+        text-align: center;
+        background-color: $black-color;
+        height: 21px;
+        margin-top: 22px;
+        margin-left: 84px;
+        &-2 {
+            display: none;
+        }
+    }
+    &__total {
+        font-size: 30px;
+        line-height: 37px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-left: 29px;
+        margin-top: 17px;
+        &-2 {
+            margin-left: 0;
+        }
+    }
+    &__economy {
+        text-align: center;
+        color: $main-color;
+        span {
+            display: block;
+            margin-top: 10px;
+        }
+       
+    }
+    &__btn {
+        padding: 20px 0 19px;
+        box-sizing: border-box;
+        background-color: $main-color;
+        width: 100%;
+        color: #fff;
+        margin-top: 43px;
     }
 }
 
@@ -1429,7 +1612,7 @@ body {
     &__counter {
         position: absolute;
         right: 0;
-        bottom: 4%;
+        bottom: 7%;
         font-size: 16px;
         line-height: 19px;
         text-align: right;

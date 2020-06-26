@@ -606,16 +606,21 @@ body {
                 display: none;
             }
         }
-        &-equip__img {
-            &_big {
-                width: 275px;
-                height: 350px;
-                margin: 50px 0px 0 auto;
-                &-2 {
-                    margin: 80px auto 0 0;
+        &-equip {
+            padding-top: 1.8%;
+            padding-bottom: 2%;
+            &__img {
+                &_big {
+                    width: 275px;
+                    height: 350px;
+                    margin: 50px 0px 0 auto;
+                    &-2 {
+                        margin: 80px auto 0 0;
+                    }
                 }
             }
         }
+     
         &-seal_equip {
             bottom: -1.5%;
             left: -29%;
@@ -623,6 +628,10 @@ body {
             &-2 {
                 left: 38%;
             }
+        }
+        &-advantages {
+            padding-bottom: 50px;
+            padding-top: 50px;
         }
     }
     @media(max-width: 565px) {
@@ -668,6 +677,14 @@ body {
         }
         &-seal_equip-2 {
             left: 26%;
+        }
+        &-seal_calc {
+            display: none;
+        }
+    }
+    @media(max-width: 500px) {
+        &-calc {
+            padding-bottom: 50px;
         }
     }
     @media(max-width: 454px) {
@@ -1273,6 +1290,9 @@ body {
             margin-top: 20px;
             max-width: 90%;
         }
+        img {
+            width: 95%;
+        }
         &__icon {
             margin-top: 15px;
             margin-left: 20px;
@@ -1283,13 +1303,14 @@ body {
         &__arrow_next {
             position: absolute;
             left: 55%;
-            bottom: -4%; 
+            bottom: -36%; 
         }
         &__arrow_prev {
             position: absolute;
             left: 32%;
-            bottom: -4%;
+            bottom: -36%;
         }
+
         &__counter {
             position: absolute;
             right: 50%;
@@ -1323,7 +1344,7 @@ body {
         }
         &__counter {
             right: 50%;
-            bottom: -2%;
+            bottom: 14%;
             font-size: 14px;
 
         }
@@ -1697,7 +1718,7 @@ body {
         padding-bottom: 65px;
         &__content {
             margin-left: 0;
-            padding-top: 18.7%;
+            padding-top: 2.7%;
         }
         &__title {
             font-size: 30px;
@@ -1759,7 +1780,7 @@ body {
             }
         }
        &__counter {
-        bottom: -122%;
+        bottom: -157%;
         margin: 0;
         left: 45%;
         font-size: 14px;
@@ -1767,7 +1788,7 @@ body {
     }
     @media(max-width: 510px) {
         &__counter {
-            bottom: -125%;
+            bottom: -158%;
         }
     }
     @media(max-width: 477px) {
@@ -1926,6 +1947,11 @@ body {
 
    }
    @media(max-width: 565px) {
+       &_faq {
+           .block-prices__item:last-child {
+               margin-top: 10px;
+           }
+       }
     padding-top: 27px;
     h3 {
         font-size: 30px;
@@ -3211,6 +3237,7 @@ body {
         }
          .slick-list {
              height: 500px;
+             padding-left: 20%;
          }
         .slick-track {
             display: flex;
@@ -3743,5 +3770,257 @@ body {
     @media(max-width: 350px ){
         min-height: 393px;
         width: 250px;
+    }
+}
+.block-calc {
+    @media(max-width: 1380px) {
+        h2 {
+            width: 65%;
+        }
+        &__choice {
+            margin-top: 22px;
+        }
+        &__discount {
+            margin-left: 60px;
+        }
+    }
+    @media(max-width: 1300px) {
+        &__check {
+            width: 391px;
+            height: 498px;
+            margin-top: 200px;
+        }
+
+        &__full {
+            width: 100%;
+
+        }
+        &__discount {
+           margin-left: 0;
+        }
+        &__total {
+            margin-left: 30px;
+        }
+        &__btn {
+           margin-top: 15px;
+        }
+        &__item {
+            width: 107px;
+            height: 118px;
+        }
+    }
+    @media(max-width: 1210px) {
+        h2 {
+            width: 80%;
+            font-size: 40px; 
+            span {
+                &::after {
+                    left: 17px;
+                    height: 9px;
+                }
+            }
+        }
+        &__check {
+         padding: 35px 35px 42px 38px;     
+        }
+        &__call {
+            max-width: 91%;
+        }
+        &__item {
+            width: 140px;
+            height: 126px;
+        }
+        &__check {
+            margin-top: 300px;
+        }
+        &__btn {
+            margin-top: 20px;
+            width: 100%;
+            height: auto;
+        }
+    }
+    @media(max-width: 1060px) {
+        &__item {
+            width: 120px;
+            height: 120px;
+        }
+    
+        p {
+            width: 90%;
+        }
+    }
+    @media(max-width: 992px) {
+        flex-direction: column;
+        &__content {
+            display: none;
+        }
+        p {
+            margin-top: 35px;
+            text-align: center;
+            margin: 35px auto;
+        }
+        h2 {
+            width: 100%;
+            text-align: center;
+            font-size: 30px;
+            span::after {
+                top: 46px;
+            }
+        }
+        &__items {
+            width: 100%;
+            justify-content: center;
+        }
+        &__item {
+            width: 110px;
+            height: 100px;
+            margin: 27px 10px 6px 10px;
+        }
+        &__img {
+            height: 60%;
+            img {
+                width: 40%;
+            }
+        }
+        &__descr {
+            p {
+                margin-top: 0px;
+                font-size: 12px;
+            }
+        }
+        &__call_1 {
+            display: none;
+        }
+        &__call_2 {
+            display: block;
+            margin: 25px auto;
+            max-width: 75%;
+            text-align: center;
+        }
+        &__check {
+            width: 400px;
+            margin: 40px auto 0;
+            height: 100%;
+            background-color: transparent;
+        }
+        &__choice {
+            margin-left: 10%;
+        }
+    }
+    @media(max-width: 830px) {
+        &__item {
+            margin: 27px 22px 6px 23px;
+        }
+    }
+    @media(max-width: 730px) {
+        padding-top: 60px;
+        padding-bottom: 60x;
+    }
+    @media(max-width: 656px) {
+        &-item {
+            margin: 21px 13px 0px 13px;
+        }
+        h2 {
+            font-size: 27px;
+            span::after {
+                top: 39px;
+                left: 6px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+    @media(max-width: 565px) {
+        &__item {
+            margin: 20px 12px 0px 12px;
+        }
+        &__total {
+            font-size: 25px;
+            line-height: 32px;
+        }
+      
+    }
+    @media(max-width: 500px) {
+      
+        &__item {
+            width: 100px;
+            height: 110px;
+            img {
+                width: 50%;
+            }
+        }
+        &__check {
+            width: 370px;
+            height: 410px;
+            margin: 30px auto 0;
+            padding: 15px 21px 22px 21px;
+        }
+        &__row {
+            line-height: 20px;
+            font-size: 13px;
+            height: 25px;
+        }
+        &__descr {
+            p {
+                margin-bottom: 0px;
+                margin-top: 0px;
+                top: 23px;
+                font-size: 12px;
+            }
+        }
+        &__call {
+            display: none;
+        }
+        &__undiscounted {
+            margin-top: 0px;
+            font-size: 12px;
+            &-2 {
+                margin-top: 0px;
+            }
+        }
+        &__economy {
+            font-size: 12px;
+        }
+
+    }
+    @media(max-width: 420px) {
+        &__item {
+            width: 84px;
+            height: 95px;
+            img {
+                width: 37%;
+            }
+            p {
+                font-size: 10px;
+                top: 15px;
+            }
+        }
+        &__check {
+            width: 90%;
+            height: 100%;
+            &-2 {
+                width: 100%;
+            }
+        }
+        &__total {
+            font-size: 20px;
+            margin-left: 15px;
+            &-2 {
+                margin-left: 0;
+            }
+        }
+        &__discount {
+            font-size: 12px;
+        }
+
+    }
+    @media(max-width: 370px) {
+        &__item {
+            margin: 15px 4px 0px 4px;
+        }
+        &__economy {
+            font-size: 10px;
+        }
     }
 }
