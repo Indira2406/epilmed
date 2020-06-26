@@ -161,7 +161,7 @@ body {
             }
             &_form {
                 width: 67%;
-                height: 80%;
+                height: 85%;
             }
         }
         &-equip{
@@ -496,6 +496,9 @@ body {
         }
     }
     @media(max-width: 767px) {
+        &-faq {
+            padding-bottom: 80px;
+        }
         &-form {
             padding-bottom: 50px;
         }
@@ -573,6 +576,9 @@ body {
             padding-bottom: 50%;
             overflow: hidden;
         }
+        &_form {
+            padding-top: 30px;
+        }
         &-box {
             height: 95%;
             &_equip {
@@ -588,7 +594,7 @@ body {
                 }
             }
             &_form {
-                height: 105%;
+                height: 98%;
             }
         }
         &__img {
@@ -1793,7 +1799,7 @@ body {
     }
     @media(max-width: 477px) {
         &__counter {
-            bottom: -118%;
+            bottom: -146%;
         }
     }
     @media(max-width: 440px) {
@@ -1802,9 +1808,14 @@ body {
             left: 44%;
         }
     }
+    @media(max-width: 436px) {
+        &__counter {
+            bottom: -148%;
+        }
+    }
     @media(max-width: 399px) {
         &__counter {
-            bottom: -133%;
+            bottom: -168%;
             left: 42%;;
         }
         &__arrow_prev {
@@ -1816,17 +1827,17 @@ body {
     }
     @media(max-width: 390px) {
         &__counter {
-            bottom: -135%;
+            bottom: -158%;
         }
     }
     @media(max-width: 385px) {
         &__counter {
-            bottom: -132%;
+            bottom: -158%;
         }
     }
     @media(max-width: 340px) {
         &__counter {
-            bottom: -134%;
+            bottom: -158%;
         }
         &__arrow_next {
             right: 31%;
