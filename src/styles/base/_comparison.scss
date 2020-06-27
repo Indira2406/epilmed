@@ -38,12 +38,21 @@
     left: -6%;
     background-color: rgba(255,255,255,0);
     width: 102%; 
+    border: none; 
+    outline: none;
+    background-color: transparent;
   }
   input[type=range]:focus { 
     outline: none; 
+    border: none; 
+    outline: none;
+    background-color: transparent;
   }
   input[type=range]:active { 
     outline: none;  
+    border: none; 
+    outline: none;
+    background-color: transparent;
   }
   
   input[type=range]::-moz-range-track { 
@@ -52,22 +61,30 @@
       width: 98%;
       background-color: rgba(255,255,255,0.1); 
       position: relative;
-      outline: none;    
+      outline: none;  
+      border: none;  
    }
   input[type=range]:active { 
     border: none; 
     outline: none;
+    background-color: transparent;
   }
   input[type=range]::-webkit-slider-thumb {
       -webkit-appearance:none;
       width: 57px;
         height: 55px; 
       background-image: url(../../img/gallery/arrows.svg);
+      border: none; 
+      outline: none;
+      background-color: transparent;
      }
   input[type=range]::-moz-range-thumb {
     -moz-appearance: none;
     width: 57px;
     height: 55px;
+    border: none; 
+    outline: none;
+    background-color: transparent;
        }   
 
   
