@@ -54,13 +54,16 @@ body {
     &-main {
         padding-bottom: 82px;
     }
+    &-slider {
+        padding-top: 96px;
+    }
     &-box{
         position: absolute;
         top: 0;
         right: 0;
         background: $bgcolor;
         width: 96.5%;
-        height: 94%;
+        height: 92%;
         z-index: -2;
         &_center {
             width: 92%;
@@ -157,11 +160,11 @@ body {
     }
     &__img {
         position: absolute;
-        top: 12.8%;
+        top: 13.8%;
         left: 50%;
         display: flex;
         &_big {
-            margin-top: 6.1%;
+            margin-top: 5.1%;
             position: relative;
             width: 568px;
             height: 750px;
@@ -175,7 +178,7 @@ body {
             }
         }
         &_small {
-            margin-top: 20%;
+            margin-top: 21%;
             position: relative;
             width: 183px;
             height: 229px; 
@@ -203,7 +206,8 @@ body {
         }
     }
     &-equip {
-        
+        padding-top: 60px;
+        padding-bottom: 60px;
         &_2 {
             padding-top: 9.8%;
             padding-bottom: 21%;
@@ -254,13 +258,13 @@ body {
         background-image: url(../img/main/seal.svg);
         background-repeat: no-repeat;
         background-size: contain;
-        bottom: 14.5%;
+        bottom: 7.5%;
         left: -17%;
         width: 213px;
         height: 189px;
         &_calc {
             bottom: 61.5%;
-            left: 78%;
+            left: 79%;
         }
         &_equip {
             bottom: -13.5%;
@@ -303,7 +307,7 @@ body {
     font-family: 'Proxima Nova Light';
     font-size: 15px;
     line-height: 18px;
-    padding-top: 18px;
+    padding-top: 39px;
     display: flex;
     &__logo {
         display: block;
@@ -471,14 +475,17 @@ body {
     padding-top: 119px;
     display: flex;
     padding-bottom: 68px;
+    justify-content: space-between;
+
     &__wrapper {
-        flex-basis: 68%;
+        flex-basis: calc(100% - 539px);
     }
     h2 {
         font-size: 50px;
         line-height: 120%;
-        width: 57%;
+        width: 525px;
         font-weight: 400;
+    
         
         span {
             color: #D77C69;
@@ -500,9 +507,10 @@ body {
     }
     p {
         margin-top: 92px;
-        width: 73%;
+        width: 673px;
         letter-spacing: 1px;
         line-height: 150%;
+    
     }
     &__choice {
         font-family: 'Proxima Nova Light';
@@ -514,93 +522,152 @@ body {
     &__items {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 27px;
+
+    }
+ 
+
+    &__item:hover {
+        border-color: $main-color;
+        img {
+            opacity: 0;
+        }
+        p {
+            color: $main-color;
+        }
     }
     &__item {
-        width: 117px;
+        position: relative;
+        width: 100%;
         height: 130px;
         background-color: #fff;
-        margin: 24px 19px 6px 0;
         border: 2px solid transparent;
-        display: inline-block;}
-
-        img {
-            transition: all 0.3s ease;
-        }
-        &__item:hover {
-            border-color: $main-color;
-            img {
-                opacity: 0;
-            }
-            p {
-                color: $main-color;
-            }
-        }
-        .item_neck:hover {
-            background-image: url(../img/calc/neckred.svg);
-            background-repeat: no-repeat;
-            background-position-x: center;
-        }
-        .item_arm:hover {
-            background-image: url(../img/calc/armred.svg);
-            background-repeat: no-repeat;
-            background-position-x: center;
-        }
-        .item_shin:hover {
-            background-image: url(../img/calc/shinred.svg);
-            background-repeat: no-repeat;
-            background-position-x: center;
-        }
-        .item_leg:hover {
-            background-image: url(../img/calc/fullred.svg);
-            background-repeat: no-repeat;
-            background-position-x: center;
-        }
-        .item_shoulders:hover {
-            background-image: url(../img/calc/shoulderred.svg);
-            background-repeat: no-repeat;
-            background-position-x: center;
-        }
-        .item_bikini:hover {
-            background-image: url(../img/calc/bikinired.svg);
-            background-repeat: no-repeat;
-            background-position-x: center;
-        }
-        .item_armpits:hover {
-            background-image: url(../img/calc/armp.svg);
-            background-repeat: no-repeat;
-            background-position-x: center;
-        }
-        .item_forearm:hover {
-            background-image: url(../img/calc/armpitred.svg);
-            background-repeat: no-repeat;
-            background-position-x: center;
-        }
-        .item_buttocks:hover {
-            background-image: url(../img/calc/butsred.svg);
-            background-repeat: no-repeat;
-            background-position-x: center;
-        }
-        .item_tum:hover {
-            background-image: url(../img/calc/tumred.svg);
-            background-repeat: no-repeat;
-            background-position-x: center;
-        }
-        .item_hips:hover {
-            background-image: url(../img/calc/hipred.png);
-            background-repeat: no-repeat;
-            background-position-x: center;
-        }
-        .item_hips:hover {
-            background-image: url(../img/calc/hipred.png);
-            background-repeat: no-repeat;
-            background-position-x: center;
-        }
-        .item_face:hover {
-            background-image: url(../img/calc/redface.svg);
-            background-repeat: no-repeat;
-            background-position-x: center;
-        }
+        flex-basis: 14%;
+        margin-bottom: 23px;
     
+        &_neck {
+            background-image: url(../../img/calc/neck.svg);
+            background-repeat: no-repeat;
+            background-position: 29px -4px;
+            &:hover {
+                background-image: url(../img/calc/neckred.svg);
+                background-repeat: no-repeat;
+                background-position: 29px -4px;
+            }
+        }
+        
+        &_arm{
+            background-image: url(../../img/calc/arm1.svg);
+            background-repeat: no-repeat;
+            background-position: 36px 24px;
+            &:hover {
+                background-image: url(../img/calc/armred.svg);
+                background-repeat: no-repeat;
+                background-position: 36px 24px;
+            }
+        }
+        &_shin{
+            background-image: url(../../img/calc/shin1.svg);
+            background-repeat: no-repeat;
+            background-position: 28px 22px;
+            &:hover {
+                background-image: url(../img/calc/shinred.svg);
+                background-repeat: no-repeat;
+                background-position: 28px 22px;
+            }
+        }
+        &_leg{
+            background-image: url(../../img/calc/fullleg.svg);
+            background-repeat: no-repeat;
+            background-position: 27px 21px;
+            &:hover {
+                background-image: url(../img/calc/fullred.svg);
+                background-repeat: no-repeat;
+                background-position: 27px 21px;
+            }
+        }
+        &_shoulders{
+            background-image: url(../../img/calc/shoulders.svg);
+            background-repeat: no-repeat;
+            background-position: 29px 18px;
+            &:hover {
+                background-image: url(../img/calc/shoulderred.svg);
+                background-repeat: no-repeat;
+                background-position: 29px 18px;
+            }
+        }
+        &_bikini{
+            background-image: url(../../img/calc/bikini.svg);
+            background-repeat: no-repeat;
+            background-position: 32px 22px;
+            &:hover {
+                background-image: url(../img/calc/bikinired.svg);
+                background-repeat: no-repeat;
+                background-position: 32px 22px;
+            }
+        }
+        &_armpits{
+            background-image: url(../../img/calc/armpits.svg);
+            background-repeat: no-repeat;
+            background-position: 28px 28px;
+            &:hover {
+                background-image: url(../img/calc/armp.svg);
+                background-repeat: no-repeat;
+                background-position: 28px 28px;
+            }
+        }
+        &_forearm{
+            background-image: url(../../img/calc/forearm.svg );
+            background-repeat: no-repeat;
+            background-position: 30px 18px;
+            &:hover {
+                background-image: url(../img/calc/armpitred.svg);
+                background-repeat: no-repeat;
+                background-position: 30px 18px;
+            }
+        }
+        &_buttocks {
+            background-image: url(../../img/calc/buttocks.svg );
+            background-repeat: no-repeat;
+            background-position: 32px 30px;
+            &:hover {
+                background-image: url(../img/calc/butsred.svg);
+                background-repeat: no-repeat;
+                background-position: 32px 30px;
+            }
+        }
+        &_tum {
+            background-image: url(../../img/calc/tummy.svg);
+            background-repeat: no-repeat;
+            background-position: 30px 24px;
+            &:hover {
+                background-image: url(../img/calc/tumred.svg);
+                background-repeat: no-repeat;
+                background-position: 30px 24px;
+            }
+        }
+        &_hips {
+            background-image: url(../../img/calc/hips.svg);
+            background-repeat: no-repeat;
+            background-position: 36px 22px;
+            &:hover {
+                background-image: url(../img/calc/hipred.png);
+                background-repeat: no-repeat;
+                background-position: 36px 22px;
+            }
+        }
+        &_face{
+            background-image: url(../../img/calc/face.svg);
+            background-repeat: no-repeat;
+            background-position: 33px 15px;
+            &:hover {
+                background-image: url(../img/calc/redface.svg);
+                background-repeat: no-repeat;
+                background-position: 33px 15px;
+            }
+        }
+        }
     &__img {
         position: relative;
         height: 80px;
@@ -614,27 +681,32 @@ body {
         }
     }
     &__descr {
-        position: relative;
-         height: 50px;
-        p {
-            font-size: 13px;
-            line-height: 16px;
-            text-align: center;
-            color: $title-color;
-            margin-top: 0;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-family: 'Proxima Nova Regular';
-        }
+        bottom: 11px;
+        left: 11px;
+        position: absolute;
+        width: 80%;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: center;
+        color: #3A4561;
+        font-family: 'Proxima Nova Regular';
+        // p {
+            
+        //     margin-top: 0;
+        //     position: absolute;
+        //     top: 50%;
+        //     left: 50%;
+        //     transform: translate(-50%, -50%);
+            
+        // }
     }
     &__call {
         font-family: 'Proxima Nova Light';
         font-size: 15px;
         line-height: 150%;
-        margin-top: 37px;
-        max-width: 50%;
+        margin-top: 24px;
+        max-width: 476px;
+
         &_2 {
             display: none;
         }
@@ -644,6 +716,7 @@ body {
         a {
             text-decoration: none;
             color: $black-color;
+            font-family: 'Proxima Nova Semibold';
         }
     }
     &__check {
@@ -692,6 +765,9 @@ body {
     &__row {
         display: flex;
         justify-content: space-between;
+        border-bottom: 1px solid #E9D9CD;
+        height: 35px;
+        margin-bottom: 17px;
     }
     &__descr {
         color: $title-color;
@@ -704,6 +780,7 @@ body {
     &__price {
         text-align: right;
         font-family: 'Proxima Nova Semibold';
+        margin-left: -18%;
     }
     &__undiscounted {
         text-align: center;
@@ -862,7 +939,7 @@ body {
     }
     &__arrow_prev {
         position: absolute;
-        right: -22%;
+        right: -21%;
         bottom: 7%;
         width: 30px;
         height: 30px;
@@ -918,7 +995,7 @@ body {
         margin-top: 74px;
         &_faq {
             margin-top: 0;
-            margin-bottom: 37px;
+            margin-bottom: 30px;
         }
     }
     &__item :checked ~ &__content {
@@ -941,9 +1018,9 @@ body {
         &_faq {
             font-family: 'Proxima Nova Light';
             font-size: 22px;
-            padding: 39px 30px 38px 46px;
+            padding: 40px 30px 40px 35px;
             text-transform: none;
-            letter-spacing: 1px;
+            letter-spacing: -0.01px;
         }
         &::after {
             content:'';
@@ -1045,6 +1122,8 @@ body {
     }
     .slick-slide {
         opacity: 1;
+        width: 422px;
+         margin-right: 26px;
     }
     &__wrapper {
         position: absolute;
@@ -1087,6 +1166,7 @@ body {
         padding: 21px 70px 25px;
         border: none;
         color: #fff;
+        width: 100%;
         background-color: $main-color;
         &:hover {
             background-color: $bgcolor;
@@ -1105,7 +1185,7 @@ body {
         text-transform: uppercase;
         color: $title-color;
         position: absolute;
-        top: 2.5%;
+        top: 15.5%;
         right: 15%;
     }
     &__arrow_next {
@@ -1122,7 +1202,6 @@ body {
 
 .block-equip {
     margin-left: 57.5%;
-    margin-top: -2%;
     position: relative;
 
     h3 {
@@ -1298,7 +1377,7 @@ body {
     }
     &__wrapper {
         background-color: $bgcolor;
-        padding-top: 58px;
+        padding-top: 52px;
         padding-bottom: 32px;
         width: 774px;
         margin-right: 23px;
@@ -1648,16 +1727,15 @@ body {
     margin-bottom: 37px;
     
     &__item {
-        padding-right: 9px;
         position: relative;
         cursor: pointer;
         transition: 3s ease;
-        
+        flex: 0 0 31%;
     }
     &__img {
-        width: 422px;
+        width: 100%;
         height: 404px;
-        position: relative;
+        position: relative;    
         img {
             width: 100%;
             height: 100%;
@@ -1670,17 +1748,20 @@ body {
 
     &__wrapper {
         position: absolute;
-        top: 57%;
-        left: 8%;
-        padding: 21px 35px;
-        width: 62%;
+        bottom: -37px;
+        left: 10%;
+        padding: 27px 29px;
+        margin: 0 auto;
+        width: 81%;
         background-color: #FCF8F5;
         line-height: 130%;
+        box-sizing: border-box;
+
     }
     &__title {
-        font-family: 'Playfair Display Regular';
-        font-size: 22px;
-        line-height: 150%;
+        font-family: 'Oranienbaum Regular';
+        font-size: 26px;
+        line-height: 120%;
         color: $title-color;
     }
     &__descr {
@@ -1689,7 +1770,7 @@ body {
         color: $black-color;
         opacity: 0.8;
         font-family: 'Proxima Nova Light';
-        margin-top: 14px;
+        margin-top: 20px;
         width: 87%;
     }
     &__link {
