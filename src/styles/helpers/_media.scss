@@ -1216,9 +1216,6 @@ body {
         &__item {
             margin-bottom: 57px;
         }
-        img {
-            width: 125%;
-        }
         &__descr {
             margin-top: 15px;
             max-width: 85%;
@@ -1270,9 +1267,10 @@ body {
         }
         &__icon {
             margin-top: 6px;
-            img {
-                width: 100%;
-            }
+        }
+        svg {
+            width: 42px;
+            height: 42px;
         }
         &_2 {
             margin-top: 0px;
@@ -1317,15 +1315,10 @@ body {
             margin-top: 20px;
             max-width: 90%;
         }
-        img {
-            width: 95%;
-        }
         &__icon {
             margin-top: 15px;
             margin-left: 20px;
-            img {
-                width: 130%;
-            }
+
         }
         &__arrow_next {
             position: absolute;
@@ -1362,10 +1355,7 @@ body {
     }
     @media(max-width: 545px) {
          padding-bottom: 66px;
-        &__item {
-            margin-bottom: 0;
 
-        }
         .slick-vertical .slick-slide {
             height: 120px;
         }
@@ -1380,14 +1370,11 @@ body {
             line-height: 19px;
         }
         &__text {
-            margin-left: 27px;
+            margin-left: 18px;
         }
         &__icon {
-            margin-top: -4px;
-            margin-left: 26px;
-            img {
-                width: 90%;
-            }
+            margin-top: 0px;
+            margin-left: 19px;
             &_2 {
                 margin-left: 0px;
             }
@@ -1413,7 +1400,8 @@ body {
             }
         }
         &__item{
-            margin-top: 10px;
+            margin-bottom: 0;
+            margin-top: 35px;
             &_2 {
                 width: 85%;
                 margin-top: 30px;
@@ -1422,6 +1410,10 @@ body {
         .slick-vertical .slick-slide {
             display: block;
             height: 70px;
+        }
+        svg {
+            width: 36px;
+            height: 36px;
         }
     }
     @media(max-width: 450px) {
@@ -1442,12 +1434,8 @@ body {
             font-size: 16px;
             line-height: 21px;
         }
-        &__text {
-            margin-left: 31px;
-        }
         &__icon {
-            margin-top: 10px;
-            margin-left: 26px;
+  
             &_2 {
                 margin: 0;
                 img {
@@ -1476,6 +1464,22 @@ body {
             font-size: 14px;
             bottom: 11%;
 
+        }
+    }
+    @media(max-width: 330px) {
+        &__counter {
+            right: 44%;
+            font-size: 14px;
+            bottom: 10%;
+
+        }
+        &__arrow_next {
+            left: 69%;
+            bottom: -17%;
+        }
+        &__arrow_prev {
+            left: 18%;
+            bottom: -17%;
         }
     }
 }
@@ -2812,6 +2816,10 @@ body {
             padding-bottom: 25px;
             justify-content: space-between;
         }
+        p {
+            margin-top: 43px;
+            margin-bottom: 31px;
+        }
     }
     @media(max-width: 656px) {
         &__wrapper {
@@ -3782,7 +3790,7 @@ body {
             font-size: 14px;
             line-height: 17px;
             text-align: center;
-            padding: 20px 33px 23px 8px;
+            padding: 18px 42px 19px 43px;
             margin: 0;
             height: 55px;
             width: 100%;
@@ -3965,6 +3973,9 @@ body {
             flex-basis: 26%;
             background-size: 36%;
             background-position: center 13px;
+            &:hover {
+                background-position: center 5px;
+            }
         }
     
         p {
@@ -3980,6 +3991,8 @@ body {
             margin-top: 35px;
             text-align: center;
             margin: 35px auto;
+            letter-spacing: 0;
+            width: 100%;
         }
         h2 {
             width: 100%;
@@ -3991,7 +4004,8 @@ body {
         }
         &__items {
             width: 100%;
-            justify-content: center;
+            margin-top: 16px;
+            justify-content: space-between;
         }
         &__item {
             height: 120px;
@@ -4006,10 +4020,9 @@ body {
             }
         }
         &__descr {
-            p {
-                margin-top: 0px;
-                font-size: 12px;
-            }
+            margin-top: 0px;
+            font-size: 12px;
+            line-height: 14px;
         }
         &__call_1 {
             display: none;
@@ -4022,12 +4035,13 @@ body {
         }
         &__check {
             width: 400px;
-            margin: 40px auto 0;
+            margin: 13px auto 0;
             height: 100%;
             background-color: transparent;
         }
         &__choice {
-            margin-left: 10%;
+            text-align: center;
+            font-size: 10px;
         }
     }
     @media(max-width: 830px) {
@@ -4055,6 +4069,14 @@ body {
                 font-size: 14px;
             }
         }
+        &__btn {
+            margin-top: 5px;
+            width: 100%;
+            padding: 18px 0 20px;
+        }
+        &__check {
+            width: 100%;
+        }
     }
     @media(max-width: 565px) {
         &__item {
@@ -4076,7 +4098,6 @@ body {
             }
         }
         &__check {
-            width: 370px;
             height: 100%;
             margin: 30px auto 0;
             padding: 15px 21px 22px 21px;
@@ -4115,13 +4136,20 @@ body {
             flex-basis: 22%;
             background-size: 40%;
             background-position: center 5px;
+            &:hover {
+                background-position: center 5px;
+            }
         }
         &__descr {
             font-size: 10px;
+            bottom: 7px;
+            line-height: 12px;
         }
         
         &__check {
-            width: 90%;
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
             height: 100%;
             &-2 {
                 width: 100%;
@@ -4137,6 +4165,9 @@ body {
         &__discount {
             font-size: 12px;
         }
+        &__full {
+            margin-bottom: 0;
+        }
 
     }
     @media(max-width: 380px) {
@@ -4145,6 +4176,9 @@ body {
             margin: 15px 4px 0px 4px;
             background-size: 47%;
             background-position: center 10px;
+            &:hover {
+                background-position: center 10px;
+            }
         }
         &__economy {
             font-size: 10px;
@@ -4152,10 +4186,13 @@ body {
     }
     @media(max-width: 350px) {
         &__item {
-            flex-basis: 239;
-            margin: 15px 4px 0px 4px;
+            margin: 15px 3px 0px 3px;
             background-size: 47%;
-        background-position: center 0px;
+            background-position: center 10px;
+            flex-basis: 26.5%;
+        &:hover {
+            background-position: center 10px;
+        }
 
         }
     }

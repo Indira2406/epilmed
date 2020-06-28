@@ -160,11 +160,11 @@ body {
     }
     &__img {
         position: absolute;
-        top: 13.8%;
+        top: 13.5%;
         left: 50%;
         display: flex;
         &_big {
-            margin-top: 5.1%;
+            margin-top: 5.9%;
             position: relative;
             width: 568px;
             height: 750px;
@@ -178,7 +178,7 @@ body {
             }
         }
         &_small {
-            margin-top: 21%;
+            margin-top: 23%;
             position: relative;
             width: 183px;
             height: 229px; 
@@ -264,7 +264,7 @@ body {
         height: 189px;
         &_calc {
             bottom: 61.5%;
-            left: 79%;
+            left: 82%;
         }
         &_equip {
             bottom: -13.5%;
@@ -307,7 +307,7 @@ body {
     font-family: 'Proxima Nova Light';
     font-size: 15px;
     line-height: 18px;
-    padding-top: 39px;
+    padding-top: 40px;
     display: flex;
     &__logo {
         display: block;
@@ -398,6 +398,10 @@ body {
     background-color: transparent;
     transition: 0.5s;
     cursor: pointer;
+    box-shadow: 0px 10px 25px rgba(215, 124, 105, 0.39);
+    &_nav {
+        box-shadow: none;
+    }
     &:focus {
         outline: none;
     }
@@ -413,7 +417,7 @@ body {
     h1 {
         font-size: 55px;
         line-height: 120%;
-        width: 38%;
+        width: 39%;
     }
     p{
         margin-top: 47px;
@@ -443,6 +447,7 @@ body {
     flex-wrap: wrap;
     margin-top: 100px;
     padding-bottom: 28px;
+
     &_2 {
         margin-top: 10px;
     }
@@ -550,7 +555,7 @@ body {
             background-image: url(../../img/calc/neck.svg);
             background-repeat: no-repeat;
             background-position: 29px -4px;
-            &:hover {
+            &:hover, &:visited, &:active {
                 background-image: url(../img/calc/neckred.svg);
                 background-repeat: no-repeat;
                 background-position: 29px -4px;
@@ -568,11 +573,11 @@ body {
             }
         }
         &_shin{
-            background-image: url(../../img/calc/shin1.svg);
+            background-image: url(../img/calc/shin1.svg);
             background-repeat: no-repeat;
             background-position: 28px 22px;
             &:hover {
-                background-image: url(../img/calc/shinred.svg);
+                background-image: url(../img/calc/shin2.svg);
                 background-repeat: no-repeat;
                 background-position: 28px 22px;
             }
@@ -584,7 +589,7 @@ body {
             &:hover {
                 background-image: url(../img/calc/fullred.svg);
                 background-repeat: no-repeat;
-                background-position: 27px 21px;
+                background-position: 28px 21px;
             }
         }
         &_shoulders{
@@ -594,7 +599,7 @@ body {
             &:hover {
                 background-image: url(../img/calc/shoulderred.svg);
                 background-repeat: no-repeat;
-                background-position: 29px 18px;
+                background-position: 28.5px 18px;
             }
         }
         &_bikini{
@@ -652,7 +657,7 @@ body {
             background-repeat: no-repeat;
             background-position: 36px 22px;
             &:hover {
-                background-image: url(../img/calc/hipred.png);
+                background-image: url(../img/calc/hipred.svg);
                 background-repeat: no-repeat;
                 background-position: 36px 22px;
             }
@@ -661,7 +666,7 @@ body {
             background-image: url(../../img/calc/face.svg);
             background-repeat: no-repeat;
             background-position: 33px 15px;
-            &:hover {
+            &:hover, &:active, &:visited {
                 background-image: url(../img/calc/redface.svg);
                 background-repeat: no-repeat;
                 background-position: 33px 15px;
@@ -690,15 +695,7 @@ body {
         text-align: center;
         color: #3A4561;
         font-family: 'Proxima Nova Regular';
-        // p {
-            
-        //     margin-top: 0;
-        //     position: absolute;
-        //     top: 50%;
-        //     left: 50%;
-        //     transform: translate(-50%, -50%);
-            
-        // }
+
     }
     &__call {
         font-family: 'Proxima Nova Light';
@@ -712,6 +709,7 @@ body {
         }
         a:nth-child(2){
             text-decoration: underline;
+            font-family: 'Proxima Nova Light';
         }
         a {
             text-decoration: none;
@@ -724,7 +722,7 @@ body {
         height: 100%;
         background-color: #fff;
         margin-top: 171px;
-        padding: 54px 50px 58px 50px;
+        padding: 59px 50px 59px 50px;
         box-sizing: border-box;
         font-family: 'Proxima Nova Light';
         font-size: 15px;
@@ -768,6 +766,7 @@ body {
         border-bottom: 1px solid #E9D9CD;
         height: 35px;
         margin-bottom: 17px;
+        padding-right: 10px;
     }
     &__descr {
         color: $title-color;
@@ -780,11 +779,12 @@ body {
     &__price {
         text-align: right;
         font-family: 'Proxima Nova Semibold';
-        margin-left: -18%;
+        margin-left: -15%;
     }
     &__undiscounted {
         text-align: center;
         color: $title-color;
+        margin-left: -9px;
         &-2 {
             margin-top: 15px;
         }
@@ -794,6 +794,7 @@ body {
         justify-content: center;
         font-family: 'Proxima Nova Semibold';
         width: 80%;
+        margin-bottom: 6px;
         
 
     }
@@ -804,6 +805,7 @@ body {
         height: 21px;
         margin-top: 22px;
         margin-left: 84px;
+        padding: 2px 3px 1px;
         &-2 {
             display: none;
         }
@@ -813,7 +815,7 @@ body {
         line-height: 37px;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        margin-left: 29px;
+        margin-left: 21px;
         margin-top: 17px;
         &-2 {
             margin-left: 0;
@@ -829,12 +831,17 @@ body {
        
     }
     &__btn {
-        padding: 20px 0 19px;
+        padding: 20px 0 21px;
         box-sizing: border-box;
         background-color: $main-color;
         width: 100%;
         color: #fff;
-        margin-top: 43px;
+        margin-top: 40px;
+        &:hover {
+            background-color: #fff;
+            color: $main-color;
+
+        }
     }
 }
 
