@@ -1485,21 +1485,44 @@ body {
 }
 
 .block-team {
+    @media(max-width: 1700px){
+        &__arrow_next {
+            right: -12%;
+        }
+        &__arrow_prev {
+            right: -7%;
+        }
+    }
     @media(max-width: 1600px) {
         right: 47.5%;
         &__content {
             margin-left: 55.5%;
         }
+        &__counter {
+            margin-top: 100px;
+            margin-left: 65%;
+        }
+    }
+    @media(max-width: 1480px) {
+        &__counter {
+            margin-top: 99px;
+            margin-left: 66%;
+        }
+    }
+    @media(max-width: 1310px) {
+        &__counter{
+            margin-top: 115px;
+        }
     }
     @media(max-width: 1280px) {
         &__counter {
-            margin-left: 78%;
-            margin-top: 132px
+            margin-left: 68%;
+            margin-top: 117px;
         }
     }
     @media(max-width: 1245px) {
         &__counter {
-            margin-left: 76%;
+            margin-left: 68%;
         }
     }
     @media(max-width: 1210px) {
@@ -1507,8 +1530,8 @@ body {
         width: 75%;
         max-width: none;
         &__counter {
-            margin-left: 64%;
-            margin-top: 102px;
+            margin-left: 71%;
+            margin-top: 109px;
         }
         &__content {
             margin-left: 55.3%;
@@ -1527,14 +1550,6 @@ body {
             padding: 13px 25px 17px;
             width: auto;
             height: auto;
-        }
-        &__arrow_next {
-            bottom: 17%;
-            right: -15%;
-        }
-        &__arrow_prev {
-            bottom: 17%;
-            right: -10%;
         }
         .slick-list {
             width: 100%;
@@ -1576,10 +1591,12 @@ body {
             text-align: left;
         }
         &__arrow_next {
-            bottom: 9%;
+            bottom: 5%;
+             right: -20%;
         }
         &__arrow_prev {
-            bottom: 9%;
+            bottom: 5%;
+            right: -12%;
         }
     }
     @media(max-width: 1100px) {
@@ -1589,7 +1606,7 @@ body {
     }
     @media(max-width: 1080px) {
         &__counter {
-            margin-top: 57px;
+            margin-top: 80px;
         }
         &__item {
             width: 410px;
@@ -1602,7 +1619,7 @@ body {
     }
     @media(max-width: 1070px) {
         &__counter {
-            margin-top: 36px;
+            margin-top: 44px;
         }
 
     }
@@ -1610,7 +1627,7 @@ body {
         right: 58%;
         &__counter {
             margin-top: 43px;
-            margin-left: 58%;
+            margin-left: 60%;
         
         }
         &__item {
@@ -1641,7 +1658,8 @@ body {
     }
     @media(max-width: 820px) {
         &__counter {
-            margin-top: 28px;
+            margin-top: 50px;
+            margin-left: 64%;
         }
     }
     @media(max-width: 767px) {
@@ -1740,9 +1758,10 @@ body {
         }
        &__counter {
         position: absolute;
-        bottom: -141.5%;
+        bottom: -142%;
         margin: 0;
-        left: 47%;
+        left: 46.5%;
+
         font-size: 14px;
        }
     }
@@ -1852,7 +1871,7 @@ body {
     }
     @media(max-width: 399px) {
         &__counter {
-            // bottom: -168%;
+            bottom: -209%;
             left: 42%;;
         }
         &__arrow_prev {
@@ -2363,7 +2382,7 @@ body {
         margin-left: 1%;
     }
     @media (max-width: 767px) {
-        margin: 0;
+        margin: 0 5px;
         .slick-active {
             opacity: 0.3;
         }
@@ -2408,27 +2427,29 @@ body {
             margin-top: 14px;
         }
         &__wrapper {
-            top: 83%;
-            left: 3%;
+            top: 74%;
+            left: 5%;
         }
         &__btn{
             padding: 7px 40px 9px;
         }
         &__arrow_next {
-            top: 87%;
-            right: 35.7%;
+            top: 79.4%;
+            right: 21.7%;
             img {
                 width: 20px;
             }
         }
         &__arrow_prev {
-            top: 87%;
+            top: 79.5%;
+            right: 72%;
             img {
                 width: 20px;
             }
         }
         &__counter {
-            top: 91%;
+            top: 86%;
+            right: 44%;
         }
     }
     @media(max-width: 400px) {
