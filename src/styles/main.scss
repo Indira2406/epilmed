@@ -935,7 +935,7 @@ body {
     &__arrow_next {
         position: absolute;
         right: -29%;
-        bottom: 7%;
+        bottom: 5%;
         width: 30px;
         height: 30px;
         z-index: 2;
@@ -947,7 +947,7 @@ body {
     &__arrow_prev {
         position: absolute;
         right: -21%;
-        bottom: 7%;
+        bottom: 5%;
         width: 30px;
         height: 30px;
         z-index: 2;
@@ -1098,12 +1098,14 @@ body {
         }
     }
     &__btn {
+        box-shadow: none;
         &_faq {
             display: block;
             position: absolute;
             right: 0px;
             top: 19%;
             padding: 16px 34px 13px;
+            box-shadow: none;
         }
     }
 }
@@ -1115,6 +1117,7 @@ body {
         position: relative;
         cursor: pointer;
         transition: 3s ease;
+        height: 100%;
         img {
             height: 545px;
         }
@@ -1123,7 +1126,7 @@ body {
                 visibility: visible;
                 height: 64px;
                 margin-top: 23px;
-                padding: 18px 70px;
+                padding: 18px 20px;
                 color: #fff;
             }
             .block-slider__wrapper {
@@ -1942,6 +1945,9 @@ body {
     }
     &__wrap {
         flex-basis: 46.6%;
+        &_invisible {
+            display: none;
+        }
     }
     &_mini {
         width: 397px;
