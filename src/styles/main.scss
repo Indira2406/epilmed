@@ -96,8 +96,8 @@ body {
     }
     &-form {
         position: relative;
-        padding-top: 6.65%;
-        padding-bottom: 15%;
+        padding-top: 121px;
+        padding-bottom: 301px;
         &_2 {
             padding-top: 12.2%;
             padding-bottom: 13%;
@@ -209,8 +209,8 @@ body {
         padding-top: 60px;
         padding-bottom: 60px;
         &_2 {
-            padding-top: 9.8%;
-            padding-bottom: 21%;
+            padding-top: 182px;
+            padding-bottom: 274px;
         }
         &__wrapper {
             position: absolute;
@@ -263,8 +263,10 @@ body {
         width: 213px;
         height: 189px;
         &_calc {
-            bottom: 61.5%;
-            left: 82%;
+            bottom: inherit;
+            left: inherit;
+            right: -69px;
+            top: 18.3%;
         }
         &_equip {
             bottom: -13.5%;
@@ -390,10 +392,10 @@ body {
 .btn {
     font-family: 'Proxima Nova Semibold';
     font-size: 16px;
-    line-height: 19px;
-    color: $main-color;
-    border: 1px solid $main-color;
-    padding: 11px 33px 8px;
+    line-height: 26px;
+    color: #D77C69;
+    border: 1px solid #D77C69;
+    padding: 11px 34px 11px;
     box-sizing: border-box;
     background-color: transparent;
     transition: 0.5s;
@@ -413,7 +415,7 @@ body {
 
 .block-main {
     margin-top: 184px;
-    padding-bottom: 191px;
+    padding-bottom: 185px;
     h1 {
         font-size: 55px;
         line-height: 120%;
@@ -435,7 +437,7 @@ body {
         background-color: $main-color;
         margin-top: 55px;
         margin-left: 5px;
-        padding: 22px 34px 21px;
+        padding: 19px 34px;
         &:hover {
             background-color: $bgcolor;
             color: $main-color;
@@ -446,7 +448,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin-top: 100px;
-    padding-bottom: 28px;
+    padding-bottom: 26px;
 
     &_2 {
         margin-top: 10px;
@@ -454,7 +456,7 @@ body {
     &__item {
         display: flex;
         flex-basis: 33.3%;
-        margin-bottom: 87px;
+        margin-bottom: 89px;
     }
 
     &__text {
@@ -478,10 +480,10 @@ body {
 }
 .block-calc {
     padding-top: 119px;
+    padding-bottom: 65px;
     display: flex;
-    padding-bottom: 68px;
     justify-content: space-between;
-
+    position: relative;
     &__wrapper {
         flex-basis: calc(100% - 539px);
     }
@@ -490,8 +492,6 @@ body {
         line-height: 120%;
         width: 525px;
         font-weight: 400;
-    
-        
         span {
             color: #D77C69;
             font-style: italic;
@@ -529,10 +529,7 @@ body {
         flex-wrap: wrap;
         justify-content: space-between;
         margin-top: 27px;
-
     }
- 
-
     &__item:hover {
         border-color: $main-color;
         img {
@@ -722,7 +719,7 @@ body {
         height: 100%;
         background-color: #fff;
         margin-top: 171px;
-        padding: 59px 50px 59px 50px;
+        padding: 54px 51px 59px 48px;
         box-sizing: border-box;
         font-family: 'Proxima Nova Light';
         font-size: 15px;
@@ -750,7 +747,7 @@ body {
         margin-left: 127px;
     }
     &__content {
-        height: 233px;
+        margin-bottom: 40px;
         &_mini {
             height: 140px;
         }
@@ -764,22 +761,26 @@ body {
         display: flex;
         justify-content: space-between;
         border-bottom: 1px solid #E9D9CD;
-        height: 35px;
-        margin-bottom: 17px;
+        padding-bottom: 13px;
+        margin-bottom: 18px;
         padding-right: 10px;
     }
     &__descr {
         color: $title-color;
     }
+    &__name {
+        flex: 1 0 auto;
+    }
     &__sale {
         text-align: right;
         text-decoration: line-through;
-        color: rgba(59, 62, 71, 0.4)
+        color: rgba(59, 62, 71, 0.4);
+        flex: 0 0 90px;
     }
     &__price {
         text-align: right;
         font-family: 'Proxima Nova Semibold';
-        margin-left: -15%;
+        flex: 0 0 82px;
     }
     &__undiscounted {
         text-align: center;
@@ -792,20 +793,19 @@ body {
     &__full {
         display: flex;
         justify-content: center;
+        align-items: center;
         font-family: 'Proxima Nova Semibold';
-        width: 80%;
         margin-bottom: 6px;
-        
-
+        margin-top: 14px;
+        padding-left: 13px;
     }
     &__discount {
         color: #FFFFFF;
         text-align: center;
         background-color: $black-color;
         height: 21px;
-        margin-top: 22px;
-        margin-left: 84px;
-        padding: 2px 3px 1px;
+        padding: 0px 3px 0px;
+        margin-right: 8px;
         &-2 {
             display: none;
         }
@@ -815,8 +815,7 @@ body {
         line-height: 37px;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        margin-left: 21px;
-        margin-top: 17px;
+        margin-left: 14px;
         &-2 {
             margin-left: 0;
         }
@@ -831,12 +830,12 @@ body {
        
     }
     &__btn {
-        padding: 20px 0 21px;
+        padding: 18px 0 19px;
         box-sizing: border-box;
         background-color: $main-color;
         width: 100%;
         color: #fff;
-        margin-top: 40px;
+        margin-top: 39px;
         &:hover {
             background-color: #fff;
             color: $main-color;
@@ -848,7 +847,7 @@ body {
 .block-team {
     direction: rtl;
     position: absolute;
-    top: 153px;
+    top: 149px;
     max-width: 960px;
     right: 51.5%;
     &__item {
@@ -896,17 +895,18 @@ body {
         }
     }
     &__content {
-        margin-left: 60.5%;
-        padding-top: 14%;
+        margin-left: 59%;
+        padding-top: 180px;
 
     }
     &__text {
         margin-top: 35px;
-        width: 88%;
-        margin-bottom: 76px;
+        max-width: 471px;
+        margin-bottom: 75px;
+        letter-spacing: -0.15px;
     }
     &__btn {
-        padding: 21px 57px 20px;
+        padding: 19px 57px 18px;
         color: #fff;
         background-color: $main-color;
         &:hover {
@@ -1120,7 +1120,14 @@ body {
         }
         &:hover {
             button {
-                display: block;
+                visibility: visible;
+                height: 64px;
+                margin-top: 23px;
+                padding: 18px 70px;
+                color: #fff;
+            }
+            .block-slider__wrapper {
+                padding: 33px 35px 40px;
             }
         }
     }
@@ -1136,14 +1143,15 @@ body {
         position: absolute;
         top: 67%;
         left: 8.5%;
-        padding: 33px 35px;
+        padding: 33px 35px 0px;
         width: 64%;
         background-color: #FCF8F5;
         line-height: 130%;
+        transition: 0.3s ease;
     }
-    &__name {
+    &__title {
         font-family: 'Playfair Display Regular';
-        font-size: 22px;
+        font-size: 20px;
         line-height: 120%;
         color: $title-color;
     }
@@ -1153,7 +1161,7 @@ body {
         color: $black-color;
         opacity: 0.8;
         font-family: 'Proxima Nova Light';
-        margin-top: 24px;
+        margin-top: 26px;
         width: 87%;
     }
     &__time {
@@ -1162,19 +1170,21 @@ body {
         line-height: 150%;
         color: #D77C69;
         opacity: 0.8;
-        margin-top: 21px;
+        margin-top: 23px;
         .far {
-            margin-right: 5px;
+            margin-right: 12px;
         }
     }
     &__btn {
-        display: none;
-        margin-top: 23px;
-        padding: 21px 70px 25px;
-        border: none;
-        color: #fff;
+        visibility: hidden;
+        margin-top: 0;
+        padding: 0 70px;
+        border: 1px solid transparent;
+        color: transparent;
         width: 100%;
         background-color: $main-color;
+        transition: 0.3s ease;
+        height: 0;
         &:hover {
             background-color: $bgcolor;
             color: $main-color;
@@ -1220,8 +1230,7 @@ body {
         display: none;
     }
     &__wrapper {
-        margin-top: 42px;
-        margin-left: -2px;
+        margin-top: 43px;
     }
     &-tabs {
         font-size: 0;
@@ -1271,11 +1280,11 @@ body {
 
     }
     p {
-        margin-top: 80px;
+        margin-top: 75px;
         margin-left: -12px;
         max-width: 79%;
         letter-spacing: 0.4px;
-        line-height: 150%;
+        line-height: 1.6;
     }
    
     &__descr {
@@ -1283,21 +1292,21 @@ body {
         font-size: 20px;
         line-height: 150%;
         color: $title-color;
-        margin-top: 36px;
-        margin-left: -14px;
+        margin-top: 33px;
+        margin-left: -15px;
     }
     ul {
-        margin-top: 50px;
+        margin-top: 52px;
         font-family: 'Proxima Nova Light';
         font-size: 18px;
         line-height: 150%;
         color: $title-color;
-        margin-left: 42px;
         list-style-type: none;
-        width: 60%;
+        max-width: 400px;
         li {
             position: relative;
-            margin-bottom: 33px;
+            margin-bottom: 30px;
+            padding-left: 42px;
             span {
                 font-family: 'Proxima Nova Semibold';
             }
@@ -1307,19 +1316,18 @@ body {
                  display: block;
                  background-size: contain;
                  background-repeat: no-repeat;
-                 width: 29px;
-                 height: 9px;
-                 position: absolute;
-                 top: 10px;
-                 left: -57px;
-                 
+                 width: 33px;
+                height: 11px;
+                position: absolute;
+                top: 11px;
+                left: -17px;
             }
         }
     }
     &__btn {
-        margin-top: 14px;
-        padding: 22px 47px 22px 60px;
-        margin-left: -14px;
+        margin-top: 22px;
+        padding: 18px 56px 18px 56px;
+        margin-left: -15px;
         color: #fff;
         background-color: $main-color;
         &:hover {
@@ -1337,7 +1345,7 @@ body {
         display: block;
     }
     &_2 {
-        padding-top: 41px;
+        padding-top: 21px;
         p {
             margin-top: 96px;
             margin-left: 2px;
@@ -1384,23 +1392,35 @@ body {
     }
     &__wrapper {
         background-color: $bgcolor;
-        padding-top: 52px;
+        padding-top: 60px;
         padding-bottom: 32px;
+        padding: 60px 50px 32px;
         width: 774px;
-        margin-right: 23px;
-
-
+        margin-right: 43px;
+        flex: 1 0 auto;
+        box-sizing: border-box;
     }
     &__wrap {
         display: flex;
-        margin-top: 88px;
+        margin-top: 78px;
         margin-bottom: 0px;
         .block-technologies__wrapper:last-child {
             width: 543px;
             margin-right: 0;
+            padding: 60px 38px 32px;
+            .block-technologies__pics {
+                justify-content: flex-start;
+            }
+            .block-technologies__item {
+                flex-basis: 47%;
+                margin-right: 32px;
+            }
+            .block-technologies__img img {
+                position: absolute;
+                transform: translateX(-10px);
+            }
         }
-      
-       
+        
     }
     &__title {
         font-family: 'Playfair Display Regular';
@@ -1408,39 +1428,27 @@ body {
         line-height: 120%;
         color: $title-color;
         margin-bottom: 28px;
-        padding-left: 40px;
     }
     &__text {
         font-family: 'Proxima Nova Light';
         font-size: 16px;
         line-height: 150%;
         color: $title-color;
-        width: 84%;
-        padding-left: 40px;
+        max-width: 626px;
     }
     &__pics {
         display: flex;
         justify-content: space-around;
-        padding-left: 20px;
-        padding-right: 20px;
     }
     &__item {
-        margin-top: 39px;
-        flex-basis: 43.3%;
-        margin-right: 21px;
-        
-
+        margin-top: 41px;
+        flex-basis: 27.3%;
     }
-    &__img {
-        width: 80%;
+    &__img {    
         height: 165px;
-        position: relative;
         img {
             position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-
+            transform: translateX(-15px);
         }
     }
     &__descr {
@@ -1449,10 +1457,7 @@ body {
         line-height: 150%;
         color: $title-color;
         margin-top: -6px;
-        letter-spacing: -0.9px;
-        padding-left: 19px;
-        width: 95%;
-
+        letter-spacing: -0.8px;
     }
 }
 .block-form {
@@ -1486,6 +1491,7 @@ body {
         line-height: 150%;
         color: $title-color;
         margin-top: 48px;
+        margin-left: -5px;
         width: 28%;
         &_modal {
             font-size: 16px;
@@ -1849,6 +1855,8 @@ body {
     display: flex;
     justify-content: center;
     padding-top: 120px;
+    max-width: 1898px;
+    margin: 0 auto;
     &__img {
         margin-right: 20px;
         margin-left: 20px;
@@ -1872,7 +1880,7 @@ body {
     font-size: 18px;
     line-height: 25px;
     color: $title-color;
-    margin-top: 104px;
+    margin-top: 112px;
     justify-content: space-between;
     &__copyright {
         width: 28%;
