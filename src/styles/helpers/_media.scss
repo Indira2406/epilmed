@@ -511,7 +511,7 @@ body {
             padding-bottom: 80px;
         }
         &-form {
-            padding-top: 60px;
+            padding-top: 31px;
             padding-bottom: 50px;
         }
         &-footer {
@@ -722,6 +722,8 @@ body {
             width: 190px;
             height: 290px;
             transform: scale(1.1);
+            margin-top: 48px;
+            margin-left: 101px;
             &-2 {
                 width: 230px;
                 height: 350px;
@@ -2708,13 +2710,14 @@ body {
             font-size: 10px;
             line-height: 150%;
             margin-top: 22px;
+            margin-left: -6px;
         }
         ul {
             font-size: 10px;
             line-height: 150%;
             width: 93%;
             margin-top: 30px;
-            margin-left: 19px;
+            margin-left: 25px;
             li {
                 margin-bottom: 14px;
                 &::before {
@@ -3038,6 +3041,9 @@ body {
                 
             }
         }
+        &__wrapper {
+            margin-top: 26px;
+        }
         &__wrapper_modal {
             input {
                 margin-bottom: 0;
@@ -3046,6 +3052,7 @@ body {
         &__wrapper_modal input:last-child {
             margin-bottom: 0px;
         }
+        
      }
      @media(max-width: 767px) {
          padding-left: 0;
@@ -3059,6 +3066,10 @@ body {
          &__descr {
              font-size: 16px;
          }
+         input, p {
+             width: 100%;
+         }
+        
      }
      @media(max-width: 656px) {
         h2, &__descr {
@@ -3082,21 +3093,26 @@ body {
          }
          &__wrapper {
              display: block;
+             margin-bottom: 36px;
          }
          input, p {
-             width: 97%;
+             width: 100%;
              display: block;
-             margin: 0 auto 20px;
+             margin: 0 auto 22px;
              padding-left: 17px;
              font-size: 12px;
          }
          p {
              margin-bottom: 10px;
-             padding-left: 5px;
+             padding-left: 0px;
+         }
+         input {
+            padding: 20px 0px 18px 20px;
          }
          &__btn {
-             width: 77%;
-             padding: 20px 0 16px;
+            width: 77%;
+            height: 56px;
+            padding: 18px 0 12px;             
              &_modal {
                  width: 100%;
              }
@@ -3120,7 +3136,8 @@ body {
              }
          }
          &__descr {
-            margin: 37px auto 0;
+                margin: 39px auto 0;
+                width: 79%;
             &_modal {
                 margin-top: 15px;
             }

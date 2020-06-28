@@ -103,12 +103,12 @@ body {
             padding-bottom: 13%;
         }
         &__wrapper {
-            padding-left: 9%;
+            padding-left: 7%;
         }
         &__img {
             position: absolute;
-            top: 9.8%;
-            right: 4.5%;
+            top: 3.8%;
+            right: 5%;
             display: flex;
             &_2 {
                 top: 15.8%;
@@ -117,7 +117,7 @@ body {
                 width: 506px;
                 height: 672px;
                 margin-top: 6.1%;
-                margin-right: 2px;
+                margin-right: 5px;
                 position: relative;
                 img {
                     width: 100%;
@@ -129,7 +129,7 @@ body {
                 }
             }
             &_middle {
-                margin-top: 28%;
+                margin-top: 26%;
                 width: 242px;
                 height: 313px;
                 position: relative;
@@ -143,7 +143,7 @@ body {
                 }
             }
             &_small {
-                margin-top: 51px;
+                margin-top: 56px;
                 width: 139px;
                 height: 180px;
                 position: relative;
@@ -214,13 +214,13 @@ body {
         }
         &__wrapper {
             position: absolute;
-            right: 115%;
-            bottom: 6%;
+            right: 114%;
+            bottom: 7%;
             }
         &__img {
             position: absolute;
-            top: -9.2%;
-            right: 140%;
+            top: -8.2%;
+            right: 139%;
             left: auto;
             
             &_small {
@@ -243,7 +243,7 @@ body {
                 }
             }
             &_big {
-                width: 442px;
+                width: 451px;
                 height: 700px;
                 img {
                     width: 100%;
@@ -1192,8 +1192,8 @@ body {
         text-transform: uppercase;
         color: $title-color;
         position: absolute;
-        top: 15.5%;
-        right: 15%;
+        top: 16%;
+        right: 13%;
     }
     &__arrow_next {
         position: absolute;
@@ -1486,7 +1486,6 @@ body {
         line-height: 150%;
         color: $title-color;
         margin-top: 48px;
-        margin-left: -5px;
         width: 28%;
         &_modal {
             font-size: 16px;
@@ -1507,7 +1506,7 @@ body {
         input {
             margin-top: 16px;
             padding: 16px 0px 15px 18px;
-            margin-right: 34px;
+            margin-right: 85px;
             width: 208px;
             border: none;
             &:focus {
