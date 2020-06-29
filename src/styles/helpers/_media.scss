@@ -511,7 +511,7 @@ body {
             padding-bottom: 100px;
         }
         &-form {
-            padding-top: 31px;
+            padding-top: 26px;
             padding-bottom: 50px;
         }
         &-footer {
@@ -525,8 +525,8 @@ body {
             }
         }
         &-seal {
-            width: 180px;
-            height: 160px;
+            width: 140px;
+            height: 141px;
             bottom: 9.5%;
             left: -20%;
             &_equip {
@@ -619,7 +619,7 @@ body {
             }
         }
         &__img {
-            right: -10px;
+            right: -12px;
             top: 54%;
             &_big {
                 width: 392px;
@@ -680,7 +680,7 @@ body {
             margin-left: 0;
             text-align: center;
             margin-top: 53px;
-            margin-bottom: 27px;
+            margin-bottom: 22px;
         }
         &-equip__img {
             &_big{
@@ -739,8 +739,8 @@ body {
             }
         }
         &-box_equip {
-            width: 80%;
-            height: 282px;
+            width: 77%;
+            height: 265px;
             margin-top: -8%;
             &-2 {
                 width: 69%;
@@ -803,13 +803,13 @@ body {
                 &-2 {
                     width: 207px;  
                     height: 317px;
-                    margin: 67px auto 0 0;
+                     margin: 69px auto 0 0;
                     left: -7%;
                 }
             }
         }
         &-box_equip {
-            margin-top: -12%;
+            margin-top: -9%;
             &-2 {
                 margin-top: 11%;
             }
@@ -821,13 +821,14 @@ body {
     }
     @media(max-width: 320px) {
         &-seal {
-            bottom: 5.5%;
-            left: -31%;
+            bottom: 11.5%;
+            left: -27%;
             &_equip {
                 bottom: -5.5%;
                 left: -38%;
                 &-2 {
-                    bottom: 6.5%;
+                    height: 157px;
+                    bottom: 0.5%;
                     left: 47%;
                 }
             }
@@ -1086,17 +1087,19 @@ body {
     }
     @media(max-width: 400px) {
         padding-top: 14px;
-        
+            &__logo {
+                flex-basis: 62%;
+            }
             address {
                 img {
-                    width: 50%;
+                    width: 48%;
                 }
             }
         
         &__phone {
             flex-basis: 20%;
             img {
-                width: 46%;
+                width: 39%;
             }
         }
     }
@@ -1105,14 +1108,14 @@ body {
    @media(max-width: 768px) {
     display: block;
     position: absolute;
-    right: 18px;
+    right: 15px;
     top: 42px;
-    width: 22px;
+    width: 26px;
     height: 20px;
     z-index: 1;
     span {
         display: block;
-        height: 2px;
+        height: 3px;
         width: 100%;
         background-color: #CFBBAA;
         margin-bottom: 5px;
@@ -1242,7 +1245,7 @@ body {
         }
         &__descr {
             width: 70%;
-            margin: 23px auto 0;
+            margin: 24px auto 0;
             text-align: center;
         }
         &__btn {
@@ -1910,7 +1913,7 @@ body {
         padding-bottom: 65px;
         &__content {
             margin-left: 0;
-            padding-top: 2.7%;
+            padding-top: 0.7%;
         }
         &__title {
             font-size: 30px;
@@ -1977,8 +1980,8 @@ body {
         left: 45%;
         font-size: 14px;
        }
-       &-links {
-        margin-top: 27px;
+       &__links {
+        margin-top: 26px;
        }
     }
     @media(max-width: 510px) {
@@ -2016,17 +2019,17 @@ body {
     }
     @media(max-width: 390px) {
         &__counter {
-            bottom: -193%;
+            bottom: -206%;
         }
     }
-    @media(max-width: 385px) {
+    @media(max-width: 380px) {
         &__counter {
-            bottom: -193%;
+            bottom: -190%;
         }
     }
     @media(max-width: 340px) {
         &__counter {
-            bottom: -197%;
+            bottom: -192%;
             left: 44.5%;
         
         }
@@ -2040,7 +2043,7 @@ body {
         }
         &__wrapper {
             top: 69%;
-            left: 46%;
+            left: 48%;
             padding: 17px 0 14px 18px;
             width: 69%;
         }
@@ -2545,7 +2548,7 @@ body {
             opacity: 1;
         }
         .slick-list {
-            height: 500px;
+            height: 465px;
         }
         &__arrow_next {
             right: 37.7%;
@@ -2594,9 +2597,10 @@ body {
             margin-top: 14px;
         }
         &__wrapper {
-            top: 83%;
+            top: 73%;
             left: 5%;
             height: 34%;
+            padding: 19px;
         }
         &__arrow_next {
             top: 85.4%;
@@ -2844,6 +2848,10 @@ body {
         h2 {
             font-size: 27px;
         }
+      h2 span::after {
+            height: 8px;
+            margin-top: -16px;
+        }
 
     }
     @media(max-width: 320px) {
@@ -2872,7 +2880,7 @@ body {
         }
         h3 {
             font-size: 30px;
-            margin-top: 2px;
+            margin-top: 0px;
         }
         &__wrapper {
             margin-top: 21px;
@@ -2899,7 +2907,7 @@ body {
         }
         &_2 {
             p {
-                margin-top: 53px;
+                margin-top: 50px;
                 width: 100%;
             }
             ul {
@@ -3138,7 +3146,8 @@ body {
         }
         &__pics {
             padding-top: 9px;
-            padding-bottom: 20px;
+            padding-bottom: 12px;
+
         }
         &__img {
             height: 60px;
@@ -3327,8 +3336,7 @@ body {
          &__btn {
             width: 77%;
             height: 56px;
-            padding: 13px 0 13px 12px;
-
+            padding: 17px 0 13px 6px;
              &_modal {
                  width: 100%;
              }
@@ -4406,7 +4414,7 @@ body {
             }
         }
         &__btn {
-            margin-top: 5px;
+            margin-top: 23px;
             width: 100%;
             padding: 18px 0 20px;
         }
@@ -4540,6 +4548,9 @@ body {
             }
 
         }
+        &__undiscounted-2 {
+            margin-top: 9px;
+        }
         &__check-3 {
             display: none;
         }
@@ -4547,11 +4558,11 @@ body {
             display: block;
         }
         &__check {
-            margin-top: 9px;
+            margin-top: 13px;
         }
         &__full {
             padding-left: 3px;
-            margin-top: 15px;
+            margin-top: 8px;
         }
         &__btn {
             padding: 18px 0 16px;
