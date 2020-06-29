@@ -381,7 +381,7 @@ body {
     }  
     &-wrapper {
         flex-basis: 46.5%;
-        address {
+        .address_burger {
             display: none;
         }
     }
@@ -1464,6 +1464,9 @@ body {
     }
 }
 .block-form {
+    &-modal {
+        height: 100%;
+    }
     h2 {
         font-size: 47px;
         line-height: 131%;
