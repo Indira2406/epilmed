@@ -1,9 +1,5 @@
-@import "helpers/variables";
-@import "helpers/mixins";
-@import "vendor/libs";
+
 @import "base/fonts";
-@import "base/general";
-@import "../blocks/modules";
 @import "helpers/media";
 @import "base/comparison";
 
@@ -19,7 +15,7 @@ h1, h2, h3, h4, p {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Playfair Display Regular';
+    font-family: 'Playfair Display', serif;
     color: $title-color;
 }
  p {
@@ -292,7 +288,7 @@ body {
         font-weight: 400;
         span {
             font-style: italic;
-            font-family: 'Playfair Display Italic';
+            font-family: 'Playfair Display', serif;
             font-weight: 400;
         }
     }
@@ -495,7 +491,7 @@ body {
         span {
             color: #D77C69;
             font-style: italic;
-            font-family: 'Playfair Display Italic';
+            font-family: 'Playfair Display', serif;
             position: relative;
             &::after {
                 content: '';
@@ -871,7 +867,7 @@ body {
         text-align: left;
     }
     &__name {
-        font-family: 'Playfair Display Regular';
+        font-family: 'Playfair Display', serif;
         font-size: 22px;
         line-height: 120%;
         color: $title-color;
@@ -885,12 +881,12 @@ body {
         margin-top: 24px;
     }
     &__title {
-        font-family: 'Playfair Display Regular';
+        font-family: 'Playfair Display', serif;
         font-size: 55px;
         line-height: 73px;
         color: $title-color;
         span {
-            font-family: 'Playfair Display Italic'; 
+            font-family: 'Playfair Display', serif;
             font-style: italic; 
         }
     }
@@ -900,7 +896,7 @@ body {
 
     }
     &__text {
-        margin-top: 35px;
+        margin-top: 39px;
         max-width: 471px;
         margin-bottom: 75px;
         letter-spacing: -0.15px;
@@ -929,7 +925,7 @@ body {
         letter-spacing: 0.1em;
         text-transform: uppercase;
         color: $title-color;
-        margin-top: 102px;
+        margin-top: 117px;
         margin-left: 74%;
     }
     &__arrow_next {
@@ -980,10 +976,10 @@ body {
 }
 .block-prices {
     padding-top: 156px;
-
     h3 {
         font-size: 60px;
         line-height: 80px;
+        font-weight: 400;
     }
     input {
         display: none;
@@ -1153,7 +1149,7 @@ body {
         transition: 0.3s ease;
     }
     &__title {
-        font-family: 'Playfair Display Regular';
+        font-family: 'Playfair Display', serif;
         font-size: 20px;
         line-height: 120%;
         color: $title-color;
@@ -1183,7 +1179,7 @@ body {
         margin-top: 0;
         padding: 0 70px;
         border: 1px solid transparent;
-        color: transparent;
+        color: #fff;
         width: 100%;
         background-color: $main-color;
         transition: 0.3s ease;
@@ -1369,7 +1365,7 @@ body {
         span {
             color: #D77C69;
             font-style: italic;
-            font-family: 'Playfair Display Italic';
+            font-family: 'Playfair Display', serif;
             position: relative;
             &::after {
                 content: '';
@@ -1426,7 +1422,7 @@ body {
         
     }
     &__title {
-        font-family: 'Playfair Display Regular';
+        font-family: 'Playfair Display', serif;
         font-size: 30px;
         line-height: 120%;
         color: $title-color;
@@ -1475,7 +1471,7 @@ body {
         span {
             color: #D77C69;
             font-style: italic;
-            font-family: 'Playfair Display Italic';
+            font-family: 'Playfair Display', serif;
             position: relative;
             &::after {
                 content: '';
@@ -1503,12 +1499,12 @@ body {
             font-size: 16px;
             line-height: 150%;
             width: 100%;
-            margin: 24px 0 40px;
+            margin: 24px 0 35px;
         }
     }
     &__wrapper {
         display: flex;
-        margin-top: 37px;
+        margin-top: 35px;
         margin-bottom: 46px;
         p {
             font-family: 'Proxima Nova Light';
@@ -1535,13 +1531,10 @@ body {
         &_modal {
             display: block;
             input {
-                margin: 9px 0 0;
-                padding: 21px 0 25px 21px;
+                margin: 15px 0 0;
+                padding: 18px 24px;
                 width: 100%;
                 box-sizing: border-box;
-            }
-            input:last-child {
-                margin-bottom: 30px;
             }
             &-flex{
                 display: flex;
@@ -1565,7 +1558,7 @@ body {
     }
     &__item {
         &_modal {
-            margin-bottom: 20px;
+            margin-bottom: 22px;
         }
     }
     &__btn {
@@ -1580,8 +1573,10 @@ body {
             width: 100%;
             box-sizing: border-box;
             &-signup {
-                padding: 23px 0;
+                padding: 18px 0;
                 text-align: center;
+                display: block;
+                margin-top: 30px;
             }
         }
     }
@@ -1632,9 +1627,10 @@ body {
                  content: "";
                  background-image: url(../img/equip/vector.svg);
                  display: block;
-                 background-size: contain;
+                 background-size: cover;
                  background-repeat: no-repeat;
-                 width: 174px;
+                 background-position: center;
+                 width: 100%;
                  height: 12px;
                  position: absolute;
                  top: 26px;
@@ -1777,7 +1773,7 @@ body {
 
     }
     &__title {
-        font-family: 'Oranienbaum Regular';
+        font-family: 'Oranienbaum', serif;
         font-size: 26px;
         line-height: 120%;
         color: $title-color;
@@ -1805,31 +1801,32 @@ body {
 }
 .block-contacts {
     display: flex;
+    align-items: center;
     margin-top: 20px;
+    height: 200px;
+    justify-content: space-between;
     a {
-        font-family: 'Playfair Display Regular';
+        font-family: 'Playfair Display', serif;
         font-size: 70px;
         line-height: 93px;
         color:$title-color;
         text-decoration: none;
-        flex-basis: 41.3%;
+        flex: 0 0 auto;
+        margin-top: -13px;
     }
     .btn {
         background-color: $main-color;
         color: #fff;
-        margin-top: 17px;
-        margin-bottom: 11px;
-        padding: 13px 54px 9px;
-        max-height: 70px;
-
+        padding: 16px 0;
+        height: 65px;
+        width: 225px;
+        flex: 0 0 225px;
     }
     address {
         display: flex;
-        align-items: start;
-        margin-top: 33px;
-        margin-left: 62px;
+        align-items: center;
+        flex: 0 0 200px;
         img {
-            margin-top: 9px;
             width: 20px;
         }
         p {
@@ -1842,18 +1839,31 @@ body {
     }
     &-social {
         display: flex;
-        margin-left: 87px;
+        flex: 0 0 261px;
+        margin-top: 11px;
         &_invisible {
             display: none;
         }
         a {
             color: #CFBBAA;
             font-size: 32px;
-            margin-right: 35px;
+            margin-left: 32px;
      
         }
-        a:last-child {
-            margin-right: 0;
+        a:first-child {
+            margin-left: 0;
+        }
+        .facebook {
+            font-size: 32px;
+        }
+        .vk {
+            font-size: 32px;
+        }
+        .youtube {
+            font-size: 30px;
+        }
+        .instagram {
+            font-size: 36px;
         }
     }
 }
@@ -1924,9 +1934,9 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 397px;
-    height: 650px;
+    height: 613px;
     background-color: #FCF8F5;;
-    padding: 40px;
+    padding: 59px 60px;
     box-sizing: border-box;
     &-big {
         width: 702px;
@@ -1934,8 +1944,8 @@ body {
     }
     &__close {
         position: absolute;
-        top: 30px;
-        right: 15px;
+        top: 13px;
+        right: 11px;
         font-size: 41px;
         line-height: 21px;
         color: $black-color;

@@ -845,7 +845,7 @@ body {
         }
         &-list {
             &__item {
-                margin-left: 14px;
+                margin-left: 7px;
                 margin-right: 7px;
             }
         }
@@ -1224,6 +1224,10 @@ body {
             width: 60%;
             font-size: 35px;
         }
+        br {
+            display: none;
+
+        }
         p {
             width: 50%;
             margin-top: 35px;
@@ -1565,7 +1569,7 @@ body {
         }
         &__arrow_prev {
             left: 18%;
-            bottom: -8%;
+            bottom: -22%;
         }
         &__counter {
             right: 43%;
@@ -1614,14 +1618,14 @@ body {
         &__content {
             margin-left: 55.5%;
         }
-        &__counter {
-            margin-top: 100px;
-            margin-left: 65%;
-        }
+        // &__counter {
+        //     margin-top: 100px;
+        //     margin-left: 65%;
+        // }
     }
     @media(max-width: 1480px) {
         &__counter {
-            margin-top: 99px;
+            margin-top: 118px;
             margin-left: 66%;
         }
     }
@@ -1999,7 +2003,7 @@ body {
     }
     @media(max-width: 440px) {
         &__counter {
-            bottom: -169%;
+            bottom: -177%;
             left: 44%;
         }
     }
@@ -2536,7 +2540,7 @@ body {
                 width: 74%;
             }
             &__counter {
-                top: 31.5%;
+                right: 4%;
             }
     }
     @media (max-width: 780px) {
@@ -2765,7 +2769,7 @@ body {
     }
     @media (max-width: 830px) {
         label {
-            width: 35.5%;
+            width: 36.5%;
         }
     }
     @media (max-width: 767px) {
@@ -3163,7 +3167,6 @@ body {
  }
  .block-form {
      @media(max-width: 1600px) {
-        padding-left: 10px;
         &__descr {
             margin-left: 0;
         }
@@ -3508,7 +3511,8 @@ body {
     }
     @media(max-width: 790px) {
         .slick-dots {
-            left: 7%;
+            left: 2%;
+            bottom: 23px;
         }
      }
      @media(max-width: 767px) {
@@ -3818,33 +3822,9 @@ body {
     }
  }
  .block-contacts {
-     @media(max-width: 1410px) {
-        margin-top: 240px;
-        a {
-            font-size: 60px;
-            line-height: 120%;
-            flex-basis: 38.3%;
-            margin-right: 10px;
-        }
-        address {
-            margin-top: 20px;
-            margin-left: 27px;
-            }
-        &-social {
-            margin-left: 56px;
-            .fab {
-                margin-top: 28px;
-            }
-        }
-     }
      @media(max-width: 1280px) {
          justify-content: space-between;
          margin-top: 200px;
-         a {
-             font-size: 50px;
-             flex-basis: 31%;
-             margin-top: 10px;
-         }
          address {
             margin-left: 0px;
          }
@@ -3852,118 +3832,22 @@ body {
              margin-left: 0;
          }
          .btn {
-            padding: 13px 0px 9px;
-            width: 19%;
-         }
-
-     }
-     @media(max-width: 1210px) {
-         margin-top: 150px;
-         a {
-             font-size: 40px;
-             flex-basis: 30%;
-             text-align: center;
-         }
-         .btn {
-             width: 16%;
-             font-size: 13px;
-         }
-         address p {
-            margin-left: 15px;
-            font-size: 16px;
-         }
-         .fab {
-            margin-right: 15px;
-            font-size: 28px;
-         }
-
-     }
-     @media(max-width: 992px) {
-         margin-top: 120px;
-         a {
-             font-size: 35px;
-             flex-basis: 34.5%;
-         }
-         .btn {
-             font-size: 12px;
-         }
-         address p {
-             font-size: 14px;
-         }
-         .fab {
-             font-size: 22px;
-             margin-right: 10px;
+            display: none;
          }
      }
-     @media(max-width: 768px) {
-         &-social {
-             &_invisible {
-                 display: block;
-                 width: 80%;
-                 margin: 0 auto;
-                 text-align: center;
-                    a {
-                        text-align: center;
-                        font-size: 25px;
-                       margin-right: 37px;
-                    }
-             }
-         }
-         margin-top: 80px;
-         .btn {
-             display: none;
-         }
-         a {
-             flex-basis: 42%;
-             font-size: 36px;
-         }
-
-         address p {
-             font-size: 12px;
-         }
-     }
-     @media(max-width: 656px) {
-         margin-top: 70px;
-         flex-direction: column;
+     @media(max-width: 1050px) {
+         flex-wrap: wrap;
          text-align: center;
-         a {
-            font-family: 'Oranienbaum Regular';
+         margin-top: 100px;
+         &>a {
+             flex-basis: 100%;
          }
-         br {
-             display: none;
-         }
-         .fab {
-             font-size: 33px;
-             margin-top: 26px;
-             margin-right: 0;
-         }
-         .fa-instagram {
-             font-size: 40px;
-             margin-top: 23px;
-         }
-         address{
-            font-size: 14px;
-            margin: 30px auto 0px;
-            p {
-                margin-left: 19px;
-                font-size: 14px;
-            }
-        
-            img {
-                margin-top: 0;
-                width: 20px;
-            }
-         }
-         &-social {
+         address, &-social {
+             flex-basis: 50%;
              justify-content: center;
-             width: 50%;
-             margin: 0px auto;
-         }
-         a{
-             margin-top: 0;
          }
      }
-     @media(max-width: 565px) {
+     @media(max-width: 615px) {
         margin-top: 52px;
          &-social_invisible {
             margin-top: 20px;
@@ -3974,6 +3858,22 @@ body {
          &_social .fab {
             margin-top: 6px;
             font-size: 27px;
+        }
+        address, &-social {
+            flex-basis: 100%;
+        }
+        & > a {
+            font-size: 36px;
+        }
+        address p {
+            font-size: 14px;;
+        }
+        &-social a {
+            margin-left: 15px;
+            margin-right: 15px;
+            &:first-child {
+                margin-left: 15px;
+            }
         }
      }
      @media(max-width: 400px) {
@@ -4141,9 +4041,6 @@ body {
     }
 }
 .modal {
-    @media(max-width: 1600px) {
-        padding: 40px;
-    }
     @media(max-width: 1280px) {
        h2 {
         font-size: 30px;
