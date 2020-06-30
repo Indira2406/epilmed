@@ -30,6 +30,8 @@ body {
     line-height: 150%;  
     color: $black-color;
     overflow-x: hidden;
+    margin: 0;
+
     // font-family: 'Proxima Nova Light';
     // font-family: 'Proxima Nova Semibold';
     // font-family: 'Playfair Display Regular';
@@ -502,7 +504,7 @@ body {
                 background-size: contain;
                 background-repeat: no-repeat;
                 position: absolute; 
-                top: 58px;
+                top: 67px;
                 left: 14px;
                 width: 279px;
                 height: 15px;
@@ -1377,10 +1379,10 @@ body {
                 background-size: contain;
                 background-repeat: no-repeat;
                 position: absolute; 
-                top: 58px;
-                left: 14px;
+                top: 67px;
+                left: 5px;
                 width: 378px;
-                height: 18px;
+                height: 20px;
                 margin-top: 14px;
             }
         }  
@@ -1483,10 +1485,10 @@ body {
                 background-size: contain;
                 background-repeat: no-repeat;
                 position: absolute; 
-                top: 58px;
-                left: 14px;
+                top: 63px;
+                left: -1px;
                 width: 378px;
-                height: 18px;
+                height: 20px;
                 margin-top: 0px;
             }
         }  
@@ -1496,7 +1498,7 @@ body {
         font-size: 20px;
         line-height: 150%;
         color: $title-color;
-        margin-top: 48px;
+        margin-top: 55px;
         margin-left: -5px;
         width: 28%;
         &_modal {
@@ -1703,12 +1705,12 @@ body {
     &__arrow_next {
         position: absolute;
         left: 5%;
-        bottom: 7%;
+        bottom: 9%;
     }
     &__arrow_prev {
         position: absolute;
         left: 0%;
-        bottom: 7%;
+        bottom: 9%;
     }
     &__counter {
         position: absolute;
@@ -1883,7 +1885,7 @@ body {
         position: relative;
         img {
             width: 100%;
-            height: 339px;
+            height: 100%;
             position: absolute;
             top: 0;
             left: 0;
