@@ -96,7 +96,7 @@ body {
         padding-bottom: 301px;
         &_2 {
             padding-top: 12.2%;
-            padding-bottom: 13%;
+            padding-bottom: 10%;
         }
         &__wrapper {
             padding-left: 7%;
@@ -380,6 +380,9 @@ body {
         .address_burger {
             display: none;
         }
+    }
+    &-social {
+        display: none;
     }
 }
 .hamburger {
@@ -1201,8 +1204,9 @@ body {
         text-transform: uppercase;
         color: $title-color;
         position: absolute;
-        top: 16%;
-        right: 13%;
+        top: 15.5%;
+        right: 15%;
+
     }
     &__arrow_next {
         position: absolute;
@@ -1709,7 +1713,7 @@ body {
     &__counter {
         position: absolute;
         right: 0;
-        bottom: 7%;
+        bottom: 9%;
         font-size: 16px;
         line-height: 19px;
         text-align: right;
@@ -1841,9 +1845,7 @@ body {
         display: flex;
         flex: 0 0 261px;
         margin-top: 11px;
-        &_invisible {
-            display: none;
-        }
+
         a {
             color: #CFBBAA;
             font-size: 32px;
