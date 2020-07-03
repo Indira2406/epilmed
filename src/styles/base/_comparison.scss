@@ -5,7 +5,7 @@
     // max-height: 600px;
     overflow: hidden; }
   .comparison figure { 
-    background-image: url(../../img/gallery/bef.png); 
+    background-image: url(../img/gallery/bef.png); 
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -19,7 +19,7 @@
     width: 100%;
   }
   .comparison figure div { 
-    background-image: url(../../img/gallery/after1.png);
+    background-image: url(../img/gallery/after1.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -73,7 +73,7 @@
       -webkit-appearance:none;
       width: 57px;
         height: 55px; 
-      background-image: url(../../img/gallery/arrows.svg);
+      background-image: url(../img/gallery/arrows.svg);
       border: none; 
       outline: none;
       background-color: transparent;
