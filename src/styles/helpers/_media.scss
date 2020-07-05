@@ -726,7 +726,8 @@ body {
             padding-bottom: 60%;
         }
         &-slider {
-            padding-top: 0;
+            padding-bottom: 10px;
+            padding-top: 30px;
         }
         &-articles {
             padding-bottom: 67px;
@@ -1691,14 +1692,22 @@ body {
                 }
             }
         }
+        // &__item {
+        //     margin-bottom: 10px;
+        //     margin-top: 23px;
 
+        // }
         &__descr {
             font-size: 10px;
             margin-top: 10px;
             max-width: 100%;
         }
-        .slick-vertical .slick-slide {
-            height: 91px;
+        // .slick-vertical .slick-slide {
+        //     height: 91px;
+        // }
+        .slick-slide {
+            height: 50px;
+            margin-top: 30px;
         }
         &__arrow_next {
             left: 71%;
@@ -1963,6 +1972,7 @@ body {
         }
     }
     @media(max-width: 767px) {
+        direction: ltr;
         margin-left: 7px;
         width: 100%;
         overflow-y: hidden;
@@ -2086,6 +2096,10 @@ body {
             transform: translateX(-50%);
        }
     }
+    @media only screen and (min-device-width: 375px) and (max-width: 767px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+        direction: ltr;
+        display: block;
+    }
     @media(max-width: 690px ){
         &__counter {
             bottom: -167%;
@@ -2199,7 +2213,7 @@ body {
    
     @media(max-width: 400px) {
         &__counter {
-            bottom: -240%;
+            bottom: -221%;
         }
         &__arrow_prev {
             left: 30%;
@@ -2216,12 +2230,17 @@ body {
             bottom: 7.5%;
         }
     }
-    @media(max-width: 370px) {
-        &__counter {
-            bottom: -221%;
-        }
+
+  @media(max-width: 399px) {
+      &__counter {
+        bottom: -240%;
+      }
+  }
+  @media(max-width: 370px) {
+    &__counter {
+        bottom: -221%;
     }
-  
+}
     @media(max-width: 340px) {
       
         &__arrow_prev {
@@ -2387,8 +2406,7 @@ body {
             font-size: 10px;
             letter-spacing: 0;
             line-height: 150%;
-            padding: 20px 29px 15px 14px;
-
+            padding: 20px 13% 15px 14px;
         }
     }
     &__content {
@@ -2735,6 +2753,7 @@ body {
     }
     @media (max-width: 767px) {
         margin: 0 10px;
+        padding-bottom: 39px;
         .slick-active {
             opacity: 0.3;
         }
@@ -2802,20 +2821,26 @@ body {
             padding: 15px 15px 30px;
         }
     }
-    @media(max-width: 560px) {
+    @media(max-width: 565px) {
         &__counter {
-            top: 94.2%;
+            top: 91%;
         }
         &__arrow_next {
             left: 62%;
+            top: 90%;
         }
         &__arrow_prev {
             left: 37%;
+            top: 90%;
+        }
+        &__btn {
+            margin-top: 0px;
+            bottom: 16%;
         }
     }
     @media(max-width: 480px) {
         &__btn {
-            bottom: 9%;
+            bottom: 14%;
         }
 
         &__item {
@@ -2832,15 +2857,15 @@ body {
             width: 70%;
         }
         &__arrow_next {
-            top: 95%;
+            top: 91%;
         }
         &__arrow_prev {
-            top: 95%;
+            top: 91%;
             left: 34%;
 
         }
         &__counter {
-            top: 96.1%;
+            top: 92.1%;
             font-size: 14px;
             left: 48%;
         }
@@ -2850,7 +2875,7 @@ body {
             padding: 0;
         }
         &__counter {
-            top: 96%;
+            top: 92%;
         }
     }
     @media(max-width: 350px) {
@@ -3754,6 +3779,12 @@ body {
              }
          }
      }
+     @media only screen and (min-device-width: 375px) and (max-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+         &__item {
+             padding-left: 10px;
+             padding-right: 10px;
+         }
+     }
      @media(max-width: 319px) {
          &__item, p{
             width: 90%;
@@ -3913,7 +3944,7 @@ body {
      }
      @media(max-width: 890px) {
         .slick-dots {
-            left: 8%;
+            left: 4%;
         }
      }
      @media(max-width: 850px) {
@@ -4221,8 +4252,10 @@ body {
         margin-top: 50px;
         margin-bottom: 54px;
         &__link {
-            right: 5%;
+            right: auto;
             top: 114%;
+            left: 50%;
+            transform: translateX(-50%);
         }
     }
     @media(max-width: 656px) {
@@ -4236,9 +4269,8 @@ body {
             margin: 50px auto;
         }
         &__link {
-            left: 56%;
+            left: 50%;
             top: 101%;
-            transform: translateX(-50%);
         }
         &__title {
             font-size: 14px;
@@ -4269,7 +4301,6 @@ body {
         &__link {
             font-size: 14px;
             top: 104.5%;
-            right: 40%;
         }
         &__item {
             margin-top: 23px;
@@ -4520,7 +4551,7 @@ body {
         }
      }
      @media(max-width: 879px) {
-        height: 540px;
+        height: 555px;
         &-big {
             height: 485px;
         }
@@ -4538,7 +4569,7 @@ body {
 
      }
      @media(max-width: 767px) {
-        height: 487px;
+        height: 500px;
 
         &_mini {
             height: 38%;
@@ -4555,7 +4586,7 @@ body {
          }
      }
      @media(max-width: 656px) {
-        height: 470px;
+        height: 479px;
          &-big {
             width: 450px;
             height: 590px;
@@ -4578,9 +4609,9 @@ body {
     @media(max-width: 450px){
         width: 331px;
         padding: 33px;
-        height: 430px;
+        height: 440px;
         &-big {
-        height: 68%;
+            height: 593px;
         }
         &_mini {
             height: 150px;
@@ -4594,9 +4625,9 @@ body {
         margin-top: 0;
         width: 305px;
         padding: 25px;
-        height: 370px;
+        height: 395px;
         &-big {
-            height: 501px;
+            height: 510px;
 
         }
         &_mini {
@@ -4619,10 +4650,10 @@ body {
         }
     }
     @media(max-width: 350px ){
-        height: 405px;
+        height: 415px;
         width: 250px;
         &-big {
-            height: 500px;
+            height: 510px;
         }
         &_mini {
             height: 125px;
